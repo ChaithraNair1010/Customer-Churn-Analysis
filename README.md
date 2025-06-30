@@ -60,10 +60,13 @@ Three models were trained and evaluated:
 
 ## 📌 Key Takeaways for Stakeholders
 
-- **High churn risk is linked to disengagement** — fewer transactions, reduced spending, and declining activity  
-- The model can **flag at-risk customers early**, enabling timely actions like **rewards, outreach, or service upgrades**  
-- The solution is both **data-backed and explainable**, making it business-friendly and trustworthy
+Transaction behavior is the strongest predictor of churn. Customers with low transaction counts (Total_Trans_Ct) and lower total amounts spent (Total_Trans_Amt) were significantly more likely to leave the bank. These metrics consistently ranked among the top features in both SHAP and model-based importance analyses.
 
+Lower relationship depth increases churn risk. Customers with fewer products (Total_Relationship_Count) and longer inactivity periods (Months_Inactive_12_mon) exhibited higher attrition, suggesting disengagement or limited banking engagement.
+
+Certain customer segments are more vulnerable. Income groups like "Less than $40K" and single individuals showed above-average churn rates. These insights could support segmentation-based retention campaigns.
+
+Premium expectations may not be met. Surprisingly, churn was higher among Platinum cardholders, indicating that premium clients might not perceive sufficient value — a signal to revisit service offerings for this segment.
 ---
 
 ## 🏁 Final Note
